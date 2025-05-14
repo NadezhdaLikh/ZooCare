@@ -170,6 +170,7 @@ public class ObservationService {
 
         observation.setIsCheckedByVet(false);
         observation.setVet(null);
+        observation.setVetFeedback(null);
         observationRepository.save(observation);
 
         return customizeObservationResponse(observation);
