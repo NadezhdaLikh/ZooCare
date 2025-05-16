@@ -25,7 +25,11 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
                 .authorizeHttpRequests(authorizeHttpRequests -> {
-                    authorizeHttpRequests.requestMatchers("/zoocare-api/v1/login", "/zoocare-api/v1/home").permitAll();
+                    authorizeHttpRequests.requestMatchers(
+                            "/v3/api-docs/**",
+                            "/swagger-ui/**",
+                            "/zoocare-api/v1/login",
+                            "/zoocare-api/v1/home").permitAll();
                     // Restrict access to admin and user pages based on roles
                     // authorizeHttpRequests.requestMatchers("/admin/**").hasRole("ADMIN");
                     // authorizeHttpRequests.requestMatchers("/user/**").hasRole("USER");

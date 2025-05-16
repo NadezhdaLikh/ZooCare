@@ -14,7 +14,6 @@ import java.time.LocalDate;
 @Component
 @RequiredArgsConstructor
 public class AdminCredentials implements CommandLineRunner {
-
     private final PasswordEncoder passwordEncoder;
     private final EmployeeRepository employeeRepository;
 
