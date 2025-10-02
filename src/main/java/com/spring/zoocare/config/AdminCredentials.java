@@ -27,20 +27,20 @@ public class AdminCredentials implements CommandLineRunner {
         }
 
         Employee admin = new Employee();
-        admin.setFirstName("first_name");
-        admin.setMiddleName("middle_name");
-        admin.setLastName("last_name");
+        admin.setFirstName("admin's_first_name");
+        admin.setMiddleName("admin's_middle_name");
+        admin.setLastName("admin's_last_name");
 
-        // Replace with Sex.MALE or Sex.FEMALE depending on preference
+        // Replace with Sex.MALE or Sex.FEMALE depending on admin's sex
         admin.setSex(Sex.FEMALE);
         
-        // Replace with actual date of birth (format: yyyy-mm-dd)
+        // Replace with admin's date of birth (format: yyyy-mm-dd)
         admin.setBirthDate(LocalDate.of(2000, 1, 1));
         
-        admin.setOccupation("occupation");
+        admin.setOccupation("admin's_occupation");
         admin.setWhenStartedWork(LocalDate.now());
         admin.setIsOnStaff(true);
-        admin.setPhoneNumber("your_phone_number_here");
+        admin.setPhoneNumber("admin's_phone_number");
         admin.setEmail("admin@example.com");
 
         String encodedPassword = passwordEncoder.encode("admin123");
