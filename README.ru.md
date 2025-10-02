@@ -19,6 +19,7 @@
 + **Системы управления базами данных (СУБД):** PostgreSQL.
 + **API и веб-сервисы:** REST, HTTP, Swagger, Postman.
 + **Контроль версий и совместная работа:** Git, GitHub.
+
 Веб-приложение разрабатывалось в IDE IntelliJ IDEA Community Edition.
 
 ## База данных
