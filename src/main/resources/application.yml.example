@@ -5,8 +5,8 @@ spring:
     password: your_password_here
     driver-class-name: org.postgresql.Driver
   mail:
-    host: smtp.gmail.com
-    port: 465
+    host: your_SMTP_server_host
+    port: port_for_establishing_connection_with_your_host
     username: your_email_here
     password: your_password_here
     properties:
